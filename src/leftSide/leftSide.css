@@ -31,14 +31,6 @@
   font-size: 18px;
   color: gray;
 }
-
-.mini-titles {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 24px 0 12px;
-  color: #808080;
-}
-
 .svg-style {
   width: 20px;
   height: 20px;
@@ -48,6 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  margin-bottom: 12px;
   gap: 12px;
 }
 
@@ -55,25 +48,25 @@
   display: inline-flex;
 }
 
-.skills {
+.border-SL {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  border: 1px solid #8080808e;
+  border: 1px solid #2b2b2b8e;
   border-radius: 50px;
   margin: 0 6px 5px 0;
   padding: 6px 10px;
   gap: 6px;
 }
 
-.skills>img {
+.border-SL>img {
   width: 25px;
   height: 25px;
   border-radius: 60px;
   object-fit: cover;
 }
 
-.skills>p {
+.border-SL>p {
   font-size: 18px;
 }

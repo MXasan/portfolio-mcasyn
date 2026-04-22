@@ -18,7 +18,7 @@ const LeftSideLanguage = () => {
       <p className="mini-titles">LANGUAGES</p>
       <div className="skills-container">
         {languages.map((language, index) => (
-          <div className="skills" key={index}>
+          <div className="border-SL" key={index}>
             <img src={language.image} alt="" />
             <p>{language.text}</p>
           </div>

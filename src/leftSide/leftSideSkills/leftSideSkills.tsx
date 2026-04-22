@@ -7,7 +7,7 @@ const LeftSideSkills = () => {
       <p className="mini-titles">SKILLS</p>
       {skills.label.map((skill) => (
         <div className="skills-container" key={skill}>
-          <p className="skills">{skill}</p>
+          <p className="border-SL">{skill}</p>
         </div>
       ))}
     </div>

@@ -6,3 +6,9 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
+.mini-titles {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px 0 12px;
+  color: #808080;
+}
