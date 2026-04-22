@@ -1,11 +1,15 @@
 import LeftSideInfo from "./leftSideInfo/leftSideInfo";
-import './leftSide.css'
+import LeftSideContact from "./leftSidecontact/leftSideContact";
+import LeftSideSkills from "./leftSideSkills/leftSideSkills";
+import LeftSideLanguage from "./leftSideLanguage/leftSideLanguage"; 
+import "./leftSide.css";
 const LeftSide = () => {
   return (
-    <div>
-      <img src="" alt="" />
-      <p>left LeftSide</p>
+    <div className="left-side">
       <LeftSideInfo />
+      <LeftSideContact />
+      <LeftSideSkills />
+      <LeftSideLanguage />
     </div>
   );
 };
