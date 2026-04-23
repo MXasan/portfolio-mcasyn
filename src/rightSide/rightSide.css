@@ -1,0 +1,17 @@
+.right-side {
+    max-width: 520px;
+    padding: 20px;
+}
+
+.rightSide-intro>p {
+    margin-bottom: 30px;
+}
+
+.box-for-element {
+    border: 1px solid #ccc;
+    background: rgba(47, 47, 47, 0.927);
+    padding: 20px 30px;
+    /* margin-bottom: 20px; */
+    border-radius: 30px;
+    width: fit-content;
+}
