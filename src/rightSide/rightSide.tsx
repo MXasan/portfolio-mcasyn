@@ -1,9 +1,13 @@
-import React from 'react'
-
+import RightSideIntro from "./rightSideIntro/rightSideIntro";
+import RightSideBgMaker from "./rightSideBgMaker";
+import "./rightSide.css";
 const RightSide = () => {
   return (
-    <div>RightSide</div>
-  )
-}
+    <div className="right-side">
+      <RightSideBgMaker />
+      <RightSideIntro />
+    </div>
+  );
+};
 
-export default RightSide
+export default RightSide;

@@ -1,5 +1,5 @@
 const skills = {
-    label: ["HTML", "CSS", "JavaScript", "TypeScript", "Git", "React","Next.js", "Bootstrap", "Tailwind CSS"],
+    label: ["HTML", "CSS", "JavaScript", "TypeScript", "Git", "React","Next.js", "Bootstrap", "Tailwind CSS", "Figma"],
 }
 const LeftSideSkills = () => {
   return (
