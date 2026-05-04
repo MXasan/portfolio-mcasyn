@@ -8,11 +8,6 @@ const RightSide = () => {
     <div className="right-side">
       <RightSideBgMaker />
       <RightSideIntro />
-      <RightSideIntro />
-      <RightSideIntro />
-      <RightSideIntro />
-      <RightSideIntro />
-
       <RightSideCarousel />
       {/* <RightSideProjects /> */}
     </div>
