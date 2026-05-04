@@ -136,7 +136,7 @@ p {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
   }
@@ -146,4 +146,22 @@ p {
   html {
     @apply font-sans;
   }
+} */
+
+@layer utilities {
+  .cursor-Left {
+    cursor: url('/arrowL.svg'), auto !important;
+  }
+
+  .cursor-Right {
+    cursor: url('/arrowR.svg'), auto !important;
+  }
+
+  .cursor-Up {
+    cursor: url('/arrowUp.svg'), auto !important;
+  }
 }
+
+/* @theme {
+  --cursor-Right: url('arrowR.png'), auto;
+} */
