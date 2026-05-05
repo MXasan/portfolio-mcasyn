@@ -6,56 +6,59 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
 const projects = [
   {
-    img: "/project1.png",
+    img: "https://picsum.photos/seed/proj1/600/400",
     title: "Project 1",
     description: "Description for project 1",
     linkForProject: "https://example.com/project1",
   },
   {
-    img: "/project2.png",
+    img: "https://picsum.photos/seed/proj2/600/400",
     title: "Project 2",
     description: "Description for project 2",
     linkForProject: "https://example.com/project2",
   },
   {
-    img: "/project3.png",
+    img: "https://picsum.photos/seed/proj3/600/400",
     title: "Project 3",
     description: "Description for project 3",
     linkForProject: "https://example.com/project3",
   },
   {
-    img: "/project4.png",
+    img: "https://picsum.photos/seed/proj4/600/400",
     title: "Project 4",
     description: "Description for project 4",
     linkForProject: "https://example.com/project4",
   },
   {
-    img: "/project5.png",
+    img: "https://picsum.photos/seed/proj5/600/400",
     title: "Project 5",
     description: "Description for project 5",
     linkForProject: "https://example.com/project5",
   },
 ];
-
 export function RightSideCarousel() {
   return (
     <Carousel className="carusel w-full sm:max-w-xs">
       <CarouselContent>
         {projects.map((item, index) => (
-          <CarouselItem key={index} className="cursor-Up">
-            <div className="parent-card p-1">
-              <Card className="flex justify-items-center ">
-                <CardContent className="card-content flex aspect-square items-center justify-center p-6">
-                  <span className="card-title text-xl font-semibold">
-                    {item.title}
-                  </span>
-                  <span className="card-description text-sm">
-                    {item.description}
-                  </span>
-                </CardContent>
+          <CarouselItem key={index}>
+            <div className="parent-card">
+              <Card className="flex justify-items-center">
+                <a href={item.linkForProject} className="cursor-Up">
+                  <CardContent className="card-content flex items-center justify-center flex-col">
+                    <img src={item.img} alt={item.title} />
+                    <div className="carusel-info">
+                      <span className="card-title text-xl font-semibold">
+                        {item.title}
+                      </span>
+                      <span className="card-description text-sm">
+                        {item.description}
+                      </span>
+                    </div>
+                  </CardContent>
+                </a>
               </Card>
             </div>
           </CarouselItem>

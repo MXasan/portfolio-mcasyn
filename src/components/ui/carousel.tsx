@@ -134,11 +134,7 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
   const { carouselRef, orientation } = useCarousel();
 
   return (
-    <div
-      ref={carouselRef}
-      className="overflow-hidden w-[520px]"
-      data-slot="carousel-content"
-    >
+    <div ref={carouselRef} className="w-[520px]" data-slot="carousel-content">
       <div
         className={cn(
           "flex",
@@ -160,7 +156,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
       aria-roledescription="slide"
       data-slot="carousel-item"
       className={cn(
-        "min-w-100 shrink-1 grow-0 basis-full",
+        "min-w-[520px] shrink-1 grow-0 basis-full",
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className,
       )}
@@ -183,9 +179,9 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "absolute touch-manipulation h-100 w-35 cursor-Left opacity-0",
+        "absolute touch-manipulation h-130 w-130 cursor-Left opacity-0",
         orientation === "horizontal"
-          ? "top-1/2 -left-12 -translate-y-1/2"
+          ? "top-1/2 -left-10/4 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className,
       )}
@@ -213,9 +209,9 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute touch-manipulation h-100 w-25 cursor-Right opacity-0 ",
+        "absolute touch-manipulation h-130 w-130 cursor-Right opacity-0",
         orientation === "horizontal"
-          ? "top-1/2 -right-10/6 -translate-y-1/2"
+          ? "top-1/2 -right-8/2 -translate-y-1/2"
           : "-bottom-12 left-1/1 -translate-x-1/2 rotate-90",
         className,
       )}
