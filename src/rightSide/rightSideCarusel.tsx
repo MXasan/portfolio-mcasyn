@@ -40,33 +40,33 @@ const projects = [
 ];
 export function RightSideCarousel() {
   return (
-    <Carousel className="carusel w-full sm:max-w-xs">
-      <CarouselContent>
-        {projects.map((item, index) => (
-          <CarouselItem key={index}>
-            <div className="parent-card">
-              <Card className="flex justify-items-center">
-                <a href={item.linkForProject} className="cursor-Up">
-                  <CardContent className="card-content flex items-center justify-center flex-col">
-                    <img src={item.img} alt={item.title} />
-                    <div className="carusel-info">
-                      <span className="card-title text-xl font-semibold">
-                        {item.title}
-                      </span>
-                      <span className="card-description text-sm">
-                        {item.description}
-                      </span>
-                    </div>
-                  </CardContent>
-                </a>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+    <>
+      <p className="mini-titles box-for-element">Projects</p>
+      <Carousel className="carusel w-full sm:max-w-xs">
+        <CarouselContent>
+          {projects.map((item, index) => (
+            <CarouselItem key={index}>
+              <div className="parent-card">
+                <Card className="flex justify-items-center bg-foreground/80 ">
+                  <a href={item.linkForProject} className="cursor-Up">
+                    <CardContent className="card-content">
+                      <img src={item.img} alt={item.title} />
+                      <div className="card-text mt-4">
+                        <p className="card-title text-cyan-50">
+                          {item.title}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </a>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel >
+    </>
   );
 }
 export default RightSideCarousel;
