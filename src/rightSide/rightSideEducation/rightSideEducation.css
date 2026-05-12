@@ -1,0 +1,88 @@
+.education-section {
+    width: 100%;
+    max-width: 520px;
+}
+
+.education-card {
+    display: flex;
+    gap: 16px;
+    padding: 20px 24px;
+    background: rgba(13, 13, 13, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    margin-bottom: 12px;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.25s ease;
+}
+
+.education-card:hover {
+    background: rgba(18, 18, 18, 0.92);
+    border-color: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+/* University logo circle */
+.education-logo {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.education-logo svg {
+    width: 22px;
+    height: 22px;
+    color: #1a1a1a;
+}
+
+/* Content area */
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+}
+
+.education-degree {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+}
+
+/* Meta row: date · university · location */
+.education-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.38);
+    line-height: 1;
+}
+
+.education-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.education-meta-item svg {
+    width: 13px;
+    height: 13px;
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+/* Description */
+.education-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 4px;
+}
