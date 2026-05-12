@@ -1,6 +1,7 @@
 .contact-section {
     width: 100%;
     max-width: 520px;
+    margin-bottom: 40px;
 }
 
 .contact-list {
@@ -18,23 +19,25 @@
     transition: opacity 0.2s ease;
 }
 
-.contact-row:last-child {
-    border-bottom: none;
-}
 
 .contact-row:hover .contact-value {
     color: rgba(255, 255, 255, 0.75);
+    transition: 0.3s ease;
+    transform: translateX(-4px);
 }
 
+
 .contact-label {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     color: #fff;
     white-space: nowrap;
+    transition: opacity 0.5s ease;
+
 }
 
 .contact-value {
-    font-size: 14px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.38);
     text-align: right;
     text-decoration: none;
@@ -43,9 +46,20 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 240px;
+
 }
 
-a.contact-value:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: underline;
+.contact-row {
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.contact-list:hover .contact-row {
+    opacity: 0.1;
+}
+
+.contact-list .contact-row:hover {
+    opacity: 1;
 }

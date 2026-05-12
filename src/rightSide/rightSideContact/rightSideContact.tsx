@@ -9,13 +9,13 @@ interface ContactItem {
 const contacts: ContactItem[] = [
   {
     label: "Email",
-    value: "hey@henrywalker.com",
-    href: "mailto:hey@henrywalker.com",
+    value: "mamurovxemail@gmail.com",
+    href: "mailto:mamurovxemail@gmail.com",
   },
   {
     label: "Phone",
-    value: "+555 123 4567",
-    href: "tel:+5551234567",
+    value: "+998 20 009-99-40",
+    href: "tel:+99820009940",
   },
   {
     label: "Meeting",
@@ -34,8 +34,8 @@ const contacts: ContactItem[] = [
   },
   {
     label: "LinkedIn",
-    value: "/henryw",
-    href: "https://linkedin.com/in/henryw",
+    value: "/mamurovx",
+    href: "https://linkedin.com/in/mamurovx/",
   },
 ];
 
@@ -44,27 +44,24 @@ const RightSideContact = () => {
     <div className="contact-section right-container ">
       <p className="mini-titles box-for-element">Contact</p>
 
-      <div className="contact-list box-for-element mb-4">
+      <div className="contact-list box-for-element ">
         {contacts.map((item, index) => (
-          <div className="contact-row" key={index}>
-            <span className="contact-label">{item.label}</span>
-
-            {item.href ? (
-              <a
-                className="contact-value"
-                href={item.href}
-                target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={
-                  item.href.startsWith("http")
-                    ? "noopener noreferrer"
-                    : undefined
-                }
-              >
-                {item.value}
-              </a>
-            ) : (
-              <span className="contact-value">{item.value}</span>
-            )}
+          <div key={index}>
+            <a
+              className="contact-row cursor-Up"
+              href={item.href}
+              target={item.href.startsWith("http") ? "_blank" : undefined}
+              rel={
+                item.href.startsWith("http") ? "noopener noreferrer" : undefined
+              }
+            >
+              <span className="contact-label">{item.label}</span>
+              {item.href ? (
+                <a className="contact-value">{item.value}</a>
+              ) : (
+                <span className="contact-value">{item.value}</span>
+              )}
+            </a>
           </div>
         ))}
       </div>
