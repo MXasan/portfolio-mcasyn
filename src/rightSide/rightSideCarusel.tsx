@@ -9,7 +9,7 @@ import {
 const projects = [
   {
     id: 1,
-    image:'/websitesImg/website4.jpg',
+    image: '/websitesImg/website4.jpg',
     title: "HR Portfolio Platform",
     tech: "Next.js · TypeScript · Tailwind CSS",
     Text: "Portfolio website for HR specialists with blog and job listings — currently in development at EdgeRunners.",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 2,
-    image:'/websitesImg/website1.jpg',
+    image: '/websitesImg/website1.jpg',
     title: "Agent Catalog App",
     tech: "React · REST API",
     Text: "Catalog web app for agents with dynamic filtering and responsive layout.",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: 3,
-    image:'/websitesImg/website2.jpg',
+    image: '/websitesImg/website2.jpg',
     title: "Christmas Shop",
     tech: "Vanilla JS · HTML · CSS",
     Text: "Holiday-themed e-commerce shop built with pure JavaScript — no frameworks.",
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     id: 4,
-    image:'/websitesImg/website1.jpg',
+    image: '/websitesImg/website1.jpg',
     title: "Hangman Game",
     tech: "JavaScript",
     Text: "Browser-based word game with game state logic, animations, and keyboard support.",
@@ -55,11 +55,10 @@ export function RightSideCarousel() {
                   <a href={item.link} className="cursor-Up">
                     <CardContent className="card-content">
                       <img src={item.image} alt={item.title} />
-                      <div className="card-text p-4">
+                      <div className="card-text">
                         <p className="card-title text-xl text-cyan-50">
                           {item.title}
                         </p>
-                        <p className="text-[1rem] text-gray-600 ">{item.Text}</p>
                       </div>
                     </CardContent>
                   </a>
