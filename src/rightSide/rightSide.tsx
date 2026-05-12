@@ -1,5 +1,7 @@
 import RightSideIntro from "./rightSideIntro/rightSideIntro";
 import RightSideBgMaker from "./rightSideBgMaker";
+import RightSideExperience from "./rightSideExpereince/rightSideExpereince";
+import RightSideEducation from "./rightSideEducation/rightSideEducation";
 
 import "./rightSide.css";
 import RightSideCarousel from "./rightSideCarusel";
@@ -9,6 +11,8 @@ const RightSide = () => {
       <RightSideBgMaker />
       <RightSideIntro />
       <RightSideCarousel />
+      <RightSideExperience />
+      <RightSideEducation />
       {/* <RightSideProjects /> */}
     </div>
   );
