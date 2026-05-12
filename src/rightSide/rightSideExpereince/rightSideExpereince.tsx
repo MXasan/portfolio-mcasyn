@@ -1,4 +1,4 @@
-import { Calendar, Building2, MapPin, Code, Layers, Globe } from "lucide-react";
+import { Calendar, Building2, MapPin, Code, Layers } from "lucide-react";
 import "./rightSideExpereince.css";
 
 interface Experience {
@@ -13,34 +13,24 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    role: "Frontend Lead",
-    dateRange: "Jan 24 - Present",
-    company: "Alpha",
-    location: "Cupertino, CA",
+    role: "Frontend Developer",
+    dateRange: "Jan 2025 – Present",
+    company: "EdgeRunners",
+    location: "Tashkent, Uzbekistan (Remote)",
     description:
-      "Spearheaded the development of a suite of progressive web applications using React and Swift, and GraphQL.",
-    logoBg: "#8B1A1A",
+      "Developed and deployed a production-ready React catalog application for agents, accessible at next-store-gamma.vercel.app. Building an HR portfolio platform utilizing Next.js, TypeScript, and Tailwind CSS, featuring blog functionalities and vacancy listings. Engages directly with clients to gather feedback and iteratively refine features.",
+    logoBg: "#1B3A6B",
     icon: <Code strokeWidth={2.2} />,
   },
   {
-    role: "Frontend Engineer",
-    dateRange: "Sep 22 - Dec 23",
-    company: "Sigma",
-    location: "New York, NY",
+    role: "Frontend Developer",
+    dateRange: "Feb 2025 – Apr 2025",
+    company: "EdUmeed",
+    location: "Tashkent, Uzbekistan (Remote)",
     description:
-      "Enhanced the user interfaces for the Sigma Web Player using React and Redux, achieving a 25% increase in user engagement.",
+      "Delivered a fully functional educational web platform in just three months, built efficiently with React and Vite. Accurately translated 100% of Figma design specifications into responsive and reusable frontend components. Integrated robust REST APIs to enable dynamic content delivery and enhance platform interactivity.",
     logoBg: "#1B6B4A",
     icon: <Layers strokeWidth={2.2} />,
-  },
-  {
-    role: "Junior Software Engineer",
-    dateRange: "Feb 20 - Dec 23",
-    company: "Omega",
-    location: "Menlo Park, CA",
-    description:
-      "Involved in the lifecycle of feature development from conception to deployment, emphasizing responsive design and accessibility standards.",
-    logoBg: "#2E5C8A",
-    icon: <Globe strokeWidth={2.2} />,
   },
 ];
 

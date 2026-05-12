@@ -1,16 +1,15 @@
 const contact = [
   {
     icon: "email.svg",
-    label: "example@example.com",
+    label: "mamurovxemail@gmail.com",
   },
   {
     icon: "phone.svg",
-    label: "998 (20) 009-99-40",
+    label: "+998 20 009-99-40",
   },
-
   {
-    icon: "location",
-    label: "Brooklyn, NY",
+    icon: "location.svg",
+    label: "Tashkent, Uzbekistan",
   },
 ];
 const LeftSideContact = () => {

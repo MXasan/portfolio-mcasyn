@@ -1,4 +1,4 @@
-import { Calendar, GraduationCap, MapPin, PenTool, Compass } from "lucide-react";
+import { Calendar, GraduationCap, MapPin, Compass } from "lucide-react";
 import "./rightSideEducation.css";
 
 interface Education {
@@ -13,22 +13,12 @@ interface Education {
 
 const educations: Education[] = [
   {
-    degree: "Master of Science in Computer Science",
-    dateRange: "Sep 18 - Jun 20",
-    university: "Astra University",
-    location: "Stanford, CA",
+    degree: "B.Sc. in Software Engineering",
+    dateRange: "2025 – 2029 (expected)",
+    university: "IT Park University",
+    location: "Tashkent, Uzbekistan",
     description:
-      'Specialized in Software Engineering. Completed thesis on "Scalable Architectures for Real-Time Web Applications" and graduated with distinction.',
-    logoBg: "#F5E6A3",
-    icon: <PenTool strokeWidth={2.2} />,
-  },
-  {
-    degree: "Bachelor of Science in Software Engineering",
-    dateRange: "Sep 15 - Sep 18",
-    university: "Nova University",
-    location: "Providence, RI",
-    description:
-      "Graduated with honors. Relevant coursework included Advanced Algorithms, Web Development, and User Interface Design.",
+      "Currently pursuing a Bachelor of Science in Software Engineering. Developing strong foundations in algorithms, web development, and software architecture.",
     logoBg: "#E8A87C",
     icon: <Compass strokeWidth={2.2} />,
   },

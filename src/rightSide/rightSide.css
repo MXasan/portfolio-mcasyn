@@ -31,10 +31,11 @@
     /* aspect-ratio: 1 / 1; */
     align-items: center;
     justify-content: start;
+    flex-direction: column;
 }
 
 .card-text {
     font-size: 2.25rem;
-    line-height: 2.5rem;
+    /* padding: 15px; */
 }
 

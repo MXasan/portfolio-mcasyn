@@ -1,8 +1,7 @@
 const personalInfo = {
   name: "Xasan Ma'murov",
   photo: "Profile.jpg",
-  about: "Brooklyn based full-stack software engineer with 7+ years of experience in building web and mobile apps."
-  
+  about: "Frontend Developer proficient in building dynamic web platforms and catalog applications using React and Next.js. Successfully delivered two production projects, translating Figma designs into responsive user interfaces through client collaboration.",
 };
 const LeftSideInfo = () => {
   return (

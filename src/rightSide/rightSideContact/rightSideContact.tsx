@@ -18,19 +18,9 @@ const contacts: ContactItem[] = [
     href: "tel:+99820009940",
   },
   {
-    label: "Meeting",
-    value: "Book call",
-    href: "https://cal.com/henrywalker",
-  },
-  {
-    label: "Website",
-    value: "henrywalker.com",
-    href: "https://henrywalker.com",
-  },
-  {
-    label: "X (Twitter)",
-    value: "@henrywalker",
-    href: "https://x.com/henrywalker",
+    label: "GitHub",
+    value: "/MXasan",
+    href: "https://github.com/MXasan",
   },
   {
     label: "LinkedIn",
