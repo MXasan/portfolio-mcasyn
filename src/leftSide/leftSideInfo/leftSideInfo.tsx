@@ -1,7 +1,7 @@
 const personalInfo = {
   name: "Xasan Ma'murov",
   photo: "Profile.jpg",
-  about: "Frontend Developer proficient in building dynamic web platforms and catalog applications using React and Next.js. Successfully delivered two production projects, translating Figma designs into responsive user interfaces through client collaboration.",
+  about: "Frontend Developer proficient in building dynamic web platforms applications using React and Next.js. Translating Figma designs into responsive user interfaces through client collaboration.",
 };
 const LeftSideInfo = () => {
   return (

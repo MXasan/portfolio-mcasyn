@@ -24,6 +24,12 @@
 
 .parent-card {
     padding: 0.25rem;
+    gap: 10px;
+}
+
+.card-content>img,
+.parent-card {
+    border-radius: 16px;
 }
 
 .card-content {
@@ -37,4 +43,7 @@
 .card-text {
     font-size: 2.25rem;
     padding: 15px;
+}
+.forMobile{
+    margin-bottom: 12px;
 }

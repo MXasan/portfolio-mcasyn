@@ -9,7 +9,7 @@ import {
 const projects = [
   {
     id: 1,
-    image: '/websitesImg/website4.jpg',
+    image: "/websitesImg/website4.jpg",
     title: "HR Portfolio Platform",
     tech: "Next.js · TypeScript · Tailwind CSS",
     Text: "Portfolio website for HR specialists with blog and job listings — currently in development at EdgeRunners.",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 2,
-    image: '/websitesImg/website1.jpg',
+    image: "/websitesImg/website1.jpg",
     title: "Agent Catalog App",
     tech: "React · REST API",
     Text: "Catalog web app for agents with dynamic filtering and responsive layout.",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: 3,
-    image: '/websitesImg/website2.jpg',
+    image: "/websitesImg/website2.jpg",
     title: "Christmas Shop",
     tech: "Vanilla JS · HTML · CSS",
     Text: "Holiday-themed e-commerce shop built with pure JavaScript — no frameworks.",
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     id: 4,
-    image: '/websitesImg/website3.jpg',
+    image: "/websitesImg/website3.jpg",
     title: "Hangman Game",
     tech: "JavaScript",
     Text: "Browser-based word game with game state logic, animations, and keyboard support.",
@@ -41,12 +41,11 @@ const projects = [
   },
 ];
 
-
 export function RightSideCarousel() {
   return (
     <>
       <p className="mini-titles box-for-element">Projects</p>
-      <Carousel className="carusel w-full sm:max-w-xs">
+      <Carousel className="carusel w-full sm:max-w-xs forDesktop">
         <CarouselContent>
           {projects.map((item, index) => (
             <CarouselItem key={index}>
@@ -69,8 +68,31 @@ export function RightSideCarousel() {
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
-      </Carousel >
+      </Carousel>
     </>
   );
 }
+
+export function RightSideCarouselForMobile() {
+  return (
+    <div className="forMobileParent">
+      {projects.map((item, index) => (
+        <div
+          key={index}
+          className="parent-card flex justify-items-center bg-foreground/80 forMobile"
+        >
+          <a href={item.link}>
+            <div className="card-content">
+              <img src={item.image} alt={item.title} />
+              <div className="card-text">
+                <p className="card-title text-xl text-cyan-50">{item.title}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default RightSideCarousel;

@@ -5,13 +5,16 @@ import RightSideEducation from "./rightSideEducation/rightSideEducation";
 import RightSideContact from "./rightSideContact/rightSideContact";
 
 import "./rightSide.css";
-import RightSideCarousel from "./rightSideCarusel";
+import RightSideCarousel, {
+  RightSideCarouselForMobile,
+} from "./rightSideProjects";
 const RightSide = () => {
   return (
     <div className="right-side">
       <RightSideBgMaker />
       <RightSideIntro />
       <RightSideCarousel />
+      <RightSideCarouselForMobile  />
       <RightSideExperience />
       <RightSideEducation />
       <RightSideContact />
