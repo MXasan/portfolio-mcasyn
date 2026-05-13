@@ -7,9 +7,12 @@ const RightSideBgMaker = () => {
     if (randomNum >= 6) {
       if (rightSide) rightSide.style.backgroundImage = "black";
     } else {
-      if (rightSide) rightSide.style.backgroundImage = `url('bg/bg-${randomNum}.jpg')`;
+      if (rightSide)
+        rightSide.style.backgroundImage = `url('bg/bg-${randomNum}.jpg')`;
     }
   }, []);
+
+  return null;
 };
 
 export default RightSideBgMaker;
