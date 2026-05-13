@@ -40,10 +40,7 @@ const RightSideContact = () => {
             <a
               className="contact-row cursor-Up"
               href={item.href}
-              target={item.href.startsWith("http") ? "_blank" : undefined}
-              rel={
-                item.href.startsWith("http") ? "noopener noreferrer" : undefined
-              }
+              target="_blank"
             >
               <span className="contact-label">{item.label}</span>
               {item.href ? (
