@@ -33,8 +33,8 @@
 }
 
 .experience-logo svg {
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     color: #fff;
 }
 
@@ -42,13 +42,13 @@
 .experience-content {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
     flex: 1;
     min-width: 0;
 }
 
 .experience-role {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: #fff;
     line-height: 1.3;
@@ -58,9 +58,9 @@
 .experience-meta {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 20px;
     flex-wrap: wrap;
-    font-size: 13px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.38);
     line-height: 1;
 }
@@ -68,20 +68,20 @@
 .experience-meta-item {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     white-space: nowrap;
 }
 
 .experience-meta-item svg {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     opacity: 0.6;
     flex-shrink: 0;
 }
 
 /* Description */
 .experience-description {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.45);
     margin-top: 4px;

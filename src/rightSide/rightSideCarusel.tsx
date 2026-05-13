@@ -33,7 +33,7 @@ const projects = [
   },
   {
     id: 4,
-    image: '/websitesImg/website1.jpg',
+    image: '/websitesImg/website3.jpg',
     title: "Hangman Game",
     tech: "JavaScript",
     Text: "Browser-based word game with game state logic, animations, and keyboard support.",
