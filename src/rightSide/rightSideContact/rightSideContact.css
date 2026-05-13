@@ -23,7 +23,7 @@
 .contact-row:hover .contact-value {
     color: rgba(255, 255, 255, 0.75);
     transition: 0.3s ease;
-    transform: translateX(-4px);
+    transform: translateX(-3px);
 }
 
 
@@ -52,8 +52,8 @@
 
 .contact-row {
     transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
+        opacity 0.3s ease,
+        transform 0.3s ease;
 }
 
 
