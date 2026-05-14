@@ -1,5 +1,6 @@
 .App {
     display: flex;
+    cursor: url('/cursor.svg'), auto !important;
 }
 
 .left {
@@ -8,13 +9,13 @@
     color: #fff;
     background: #0D0D0D;
     /* height: 100vh; */
-    max-width: 420px;
+    max-width: 500px;
     z-index: 1;
 }
 
 .left-side {
     position: sticky;
-    top: 1px;
+    top: 0px;
 }
 
 .right {
