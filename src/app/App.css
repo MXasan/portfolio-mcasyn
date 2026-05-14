@@ -1,6 +1,5 @@
 .App {
     display: flex;
-
 }
 
 .left {
@@ -54,13 +53,15 @@
     .left-side {
         max-width: 520px;
     }
-    .right-side{
+
+    .right-side {
         padding: 40px;
     }
 
     .forMobileParent {
         display: block;
     }
+
     .forDesktop {
         display: none;
     }
@@ -68,4 +69,21 @@
     /* .right {
         background-attachment: scroll;
     } */
+    .right {
+        position: relative;
+    }
+
+    .right::before {
+        content: '';
+        position: fixed;
+        /* fixed on the pseudo-element works */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('your-image.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
 }
