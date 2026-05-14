@@ -10,6 +10,7 @@ const RightSideBgMaker = () => {
       if (rightSide) rightSide.style.backgroundImage = `url('bg/bg-${randomNum}.jpg')`;
     }
   }, []);
+  return null;
 };
 
 export default RightSideBgMaker;
