@@ -10,6 +10,7 @@ function App() {
         <LeftSide />
       </div>
       <div className="right">
+        <div className="bg-fixed"></div>
         <RightSide />
       </div>
     </div>
