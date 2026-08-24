@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website showcasing my background, skills, projects, and experience as a Software Engineering student and Front-End Developer.
 
-Currently, two official plugins are available:
+## 🚀 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[portfolio-mcasyn.vercel.app](https://portfolio-mcasyn.vercel.app/)
 
-## React Compiler
+<img width="1903" height="940" alt="image" src="https://github.com/user-attachments/assets/02cdc47e-a844-4f5a-acfa-fb8d402a1c13" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 About
 
-## Expanding the ESLint configuration
+This portfolio was created to have a personal space where I can:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Introduce myself and my background
+* Showcase my projects
+* Present my technical skills
+* Share my experience and education
+* Provide links to my GitHub and other professional profiles
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Highlights
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Responsive design for desktop and mobile
+* Personal introduction and profile
+* Projects showcase
+* Skills and technologies section
+* Education and experience
+* Contact and social links
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+* HTML5
+* Tailwind
+* TypeScript
+* React
+
+> Add React, TypeScript, Vite, or other technologies here if they are actually used in this repository.
+
+## 👨‍💻 My Contribution
+
+I designed and developed the portfolio myself, including:
+
+* Website structure and layout
+* Responsive UI
+* Styling and visual design
+* Project and personal information sections
+* Interactive elements
+* Deployment and configuration
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/MXasan/portfolio-mcasyn.git
+cd portfolio-mcasyn
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then install dependencies if required and start the development server.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🎯 Purpose
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The main purpose of this project is to represent my professional profile online and provide an accessible overview of my projects, skills, and experience.
+
+## 📌 Status
+
+🟢 Active — periodically updated as I gain new experience and build new projects.
