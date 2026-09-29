@@ -9,22 +9,6 @@ import {
 const projects = [
   {
     id: 1,
-    image: "/websitesImg/website4.jpg",
-    title: "HR Portfolio Platform",
-    tech: "Next.js · TypeScript · Tailwind CSS",
-    Text: "Portfolio website for HR specialists with blog and job listings — currently in development at EdgeRunners.",
-    link: "https://persanal-brand-hr.vercel.app/",
-  },
-  {
-    id: 2,
-    image: "/websitesImg/website1.jpg",
-    title: "Agent Catalog App",
-    tech: "React · REST API",
-    Text: "Catalog web app for agents with dynamic filtering and responsive layout.",
-    link: "https://next-store-gamma.vercel.app",
-  },
-  {
-    id: 3,
     image: "/websitesImg/website2.jpg",
     title: "Christmas Shop",
     tech: "Vanilla JS · HTML · CSS",
@@ -32,7 +16,7 @@ const projects = [
     link: "https://christmas-shop-flame.vercel.app",
   },
   {
-    id: 4,
+    id: 2,
     image: "/websitesImg/website3.jpg",
     title: "Hangman Game",
     tech: "JavaScript",
