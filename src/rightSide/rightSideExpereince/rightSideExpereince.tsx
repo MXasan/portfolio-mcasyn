@@ -13,24 +13,44 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    role: "Frontend Developer",
-    dateRange: "Jan 2025 – Present",
-    company: "EdgeRunners",
-    location: "Tashkent, Uzbekistan (Remote)",
+    role: "AI Product Manager",
+    dateRange: "Sep 2026 – Present",
+    company: "GK Technologies",
+    location: "Tashkent, Uzbekistan (On-site)",
     description:
-      "Developed and deployed a production-ready React catalog application for agents, accessible at next-store-gamma.vercel.app. Building an HR portfolio platform utilizing Next.js, TypeScript, and Tailwind CSS, featuring blog functionalities and vacancy listings. Engages directly with clients to gather feedback and iteratively refine features.",
-    logoBg: "#1B3A6B",
+      "Managing AI-driven product initiatives, working with Amazon Bedrock to shape and deliver features from concept to release.",
+    logoBg: "#111111",
     icon: <Code strokeWidth={2.2} />,
   },
   {
-    role: "Frontend Developer",
-    dateRange: "Feb 2025 – Apr 2025",
-    company: "EdUmeed",
+    role: "Software Engineer Intern",
+    dateRange: "Jul 2026 – Present",
+    company: "Hackonnect",
     location: "Tashkent, Uzbekistan (Remote)",
     description:
-      "Delivered a fully functional educational web platform in just three months, built efficiently with React and Vite. Accurately translated 100% of Figma design specifications into responsive and reusable frontend components. Integrated robust REST APIs to enable dynamic content delivery and enhance platform interactivity.",
-    logoBg: "#1B6B4A",
-    icon: <Layers strokeWidth={2.2} />,
+      "Improved Lighthouse performance on startupweekend.uz from 36 to 82, cutting blocking time from 4.6 s to 120 ms and LCP from 5.0 s to 1.8 s, using Next.js and modern front-end optimization techniques.",
+    logoBg: "#1B8CF2",
+    icon: <Code strokeWidth={2.2} />,
+  },
+  {
+    role: "Digital Publishing Operations Specialist",
+    dateRange: "Jul 2026 – Aug 2026",
+    company: "Exadel",
+    location: "Tashkent, Uzbekistan (Hybrid)",
+    description:
+      "Handled digital publishing operations using Adobe Experience Manager (AEM), managing and maintaining web content.",
+    logoBg: "#1A1A1A",
+    icon: <Code strokeWidth={2.2} />,
+  },
+  {
+    role: "Frontend Developer Student Trainee",
+    dateRange: "May 2024 – Apr 2025",
+    company: "The Rolling Scopes School",
+    location: "Uzbekistan (Hybrid)",
+    description:"Supported day-to-day digital publishing operations, coordinating workflows for 150+ pieces of content per week across editorial, design, and technical teams.",
+    // Completed a one-year apprenticeship focused on front-end development and JavaScript, building hands-on projects and following industry best practices.
+    logoBg: "#FFE500",
+    icon: <Code strokeWidth={2.2} />,
   },
 ];
 
