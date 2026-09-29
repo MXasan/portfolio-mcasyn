@@ -34,7 +34,7 @@ const RightSideContact = () => {
     <div className="contact-section right-container ">
       <p className="mini-titles box-for-element">Contact</p>
 
-      <div className="contact-list box-for-element ">
+      <div className="contact-list box-for-element divide-y divide-gray-500/30">
         {contacts.map((item, index) => (
           <div key={index}>
             <a
