@@ -44,8 +44,8 @@ const projects = [
 export function RightSideCarousel() {
   return (
     <>
-      <p className="mini-titles box-for-element">Projects</p>
-      <Carousel className="carusel w-full sm:max-w-xs forDesktop">
+      <p className=" mini-titles box-for-element">Projects</p>
+      <Carousel className="projects-section carusel w-full sm:max-w-xs forDesktop">
         <CarouselContent>
           {projects.map((item, index) => (
             <CarouselItem key={index}>
@@ -75,7 +75,7 @@ export function RightSideCarousel() {
 
 export function RightSideCarouselForMobile() {
   return (
-    <div className="forMobileParent">
+    <div className="projects-section forMobileParent">
       {projects.map((item, index) => (
         <div
           key={index}
