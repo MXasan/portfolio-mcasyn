@@ -1,4 +1,4 @@
-import { Calendar, Building2, MapPin, Code, Layers } from "lucide-react";
+import { Calendar, Building2, MapPin, Code } from "lucide-react";
 import "./rightSideExpereince.css";
 
 interface Experience {
