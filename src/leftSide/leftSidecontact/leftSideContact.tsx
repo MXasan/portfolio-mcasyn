@@ -8,7 +8,7 @@ const contact = [
     label: "+998 20 009-99-40",
   },
   {
-    icon: "location.svg",
+    icon: "cursor.svg",
     label: "Tashkent, Uzbekistan",
   },
 ];

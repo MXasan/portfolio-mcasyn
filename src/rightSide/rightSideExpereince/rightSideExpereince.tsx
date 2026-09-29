@@ -1,5 +1,10 @@
-import { Calendar, Building2, MapPin, Code } from "lucide-react";
+import { Calendar, Building2, MapPin } from "lucide-react";
 import "./rightSideExpereince.css";
+
+import hackonnect from "../../assets/hackonnect.jpg";
+import rs from "../../assets/rs.jpg";
+import gk from "../../assets/gk.jpg";
+import exadel from "../../assets/exadel.jpg";
 
 interface Experience {
   role: string;
@@ -7,8 +12,8 @@ interface Experience {
   company: string;
   location: string;
   description: string;
-  logoBg: string;
-  icon: React.ReactNode;
+  icon: string;
+  alt: string;  
 }
 
 const experiences: Experience[] = [
@@ -19,8 +24,8 @@ const experiences: Experience[] = [
     location: "Tashkent, Uzbekistan (On-site)",
     description:
       "Managing AI-driven product initiatives, working with Amazon Bedrock to shape and deliver features from concept to release.",
-    logoBg: "#111111",
-    icon: <Code strokeWidth={2.2} />,
+    icon: gk,
+    alt: "GK Technologies Logo",
   },
   {
     role: "Software Engineer Intern",
@@ -29,8 +34,8 @@ const experiences: Experience[] = [
     location: "Tashkent, Uzbekistan (Remote)",
     description:
       "Improved Lighthouse performance on startupweekend.uz from 36 to 82, cutting blocking time from 4.6 s to 120 ms and LCP from 5.0 s to 1.8 s, using Next.js and modern front-end optimization techniques.",
-    logoBg: "#1B8CF2",
-    icon: <Code strokeWidth={2.2} />,
+    icon: hackonnect,
+    alt: "Hackonnect Logo",
   },
   {
     role: "Digital Publishing Operations Specialist",
@@ -39,18 +44,19 @@ const experiences: Experience[] = [
     location: "Tashkent, Uzbekistan (Hybrid)",
     description:
       "Handled digital publishing operations using Adobe Experience Manager (AEM), managing and maintaining web content.",
-    logoBg: "#1A1A1A",
-    icon: <Code strokeWidth={2.2} />,
+    icon: exadel,
+    alt: "Exadel Logo",
   },
   {
     role: "Frontend Developer Student Trainee",
     dateRange: "May 2024 – Apr 2025",
     company: "The Rolling Scopes School",
     location: "Uzbekistan (Hybrid)",
-    description:"Supported day-to-day digital publishing operations, coordinating workflows for 150+ pieces of content per week across editorial, design, and technical teams.",
+    description:
+      "Supported day-to-day digital publishing operations, coordinating workflows for 150+ pieces of content per week across editorial, design, and technical teams.",
     // Completed a one-year apprenticeship focused on front-end development and JavaScript, building hands-on projects and following industry best practices.
-    logoBg: "#FFE500",
-    icon: <Code strokeWidth={2.2} />,
+    icon: rs,
+    alt: "Rolling Scopes School Logo",
   },
 ];
 
@@ -61,12 +67,7 @@ const RightSideExperience = () => {
 
       {experiences.map((exp, index) => (
         <div className="experience-card" key={index}>
-          <div
-            className="experience-logo"
-            style={{ backgroundColor: exp.logoBg }}
-          >
-            {exp.icon}
-          </div>
+          <img src={exp.icon} alt={exp.company} className="experience-logo" />
 
           <div className="experience-content">
             <span className="experience-role">{exp.role}</span>
