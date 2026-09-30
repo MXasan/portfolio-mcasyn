@@ -1,5 +1,5 @@
-import LeftSide from "../leftSide/leftSide";
-import RightSide from "../rightSide/rightSide";
+import LeftSide from "./leftSide/leftSide";
+import RightSide from "./rightSide/rightSide";
 import Cursor from "../components/cursor";
 import "./App.css";
 

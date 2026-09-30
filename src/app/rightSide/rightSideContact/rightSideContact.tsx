@@ -38,7 +38,7 @@ const RightSideContact = () => {
         {contacts.map((item, index) => (
           <div key={index}>
             <a
-              data-cursor="up"  
+              data-cursor="up"
               className="contact-row"
               href={item.href}
               target="_blank"

@@ -1,5 +1,5 @@
 import RightSideIntro from "./rightSideIntro/rightSideIntro";
-import RightSideBgMaker from "../components/rightSideBgMaker";
+import RightSideBgMaker from "../../components/rightSideBgMaker";
 import RightSideExperience from "./rightSideExpereince/rightSideExpereince";
 import RightSideEducation from "./rightSideEducation/rightSideEducation";
 import RightSideContact from "./rightSideContact/rightSideContact";
