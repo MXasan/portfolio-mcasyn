@@ -73,7 +73,6 @@ function Carousel({
     api?.scrollNext();
   }, [api]);
 
-
   React.useEffect(() => {
     if (!api || !setApi) return;
     setApi(api);
@@ -166,8 +165,9 @@ function CarouselPrevious({
       data-slot="carousel-previous"
       variant={variant}
       size={size}
+      data-cursor="left"
       className={cn(
-        "absolute touch-manipulation h-130 w-130 cursor-Left opacity-0",
+        "absolute touch-manipulation h-130 w-130 opacity-0",
         orientation === "horizontal"
           ? "top-1/2 -left-10/4 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -196,8 +196,9 @@ function CarouselNext({
       data-slot="carousel-next"
       variant={variant}
       size={size}
+      data-cursor="right"
       className={cn(
-        "absolute touch-manipulation h-130 w-130 cursor-Right opacity-0",
+        "absolute touch-manipulation h-130 w-130 opacity-0",
         orientation === "horizontal"
           ? "top-1/2 -right-8/2 -translate-y-1/2"
           : "-bottom-12 left-1/1 -translate-x-1/2 rotate-90",

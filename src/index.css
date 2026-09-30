@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  cursor: none;
 }
 
 .mini-titles {
@@ -136,6 +137,7 @@ p {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+
 /* @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -148,6 +150,7 @@ p {
   }
 } */
 
+/* 
 @layer utilities {
   .cursor-Left {
     cursor: url('/arrowL.svg'), auto !important;
@@ -160,6 +163,17 @@ p {
   .cursor-Up {
     cursor: url('/arrowUp.svg'), auto !important;
   }
+} */
+
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  z-index: 9999;
 }
 
 /* @theme {
