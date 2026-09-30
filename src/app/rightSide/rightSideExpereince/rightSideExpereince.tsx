@@ -1,10 +1,10 @@
 import { Calendar, Building2, MapPin } from "lucide-react";
 import "./rightSideExpereince.css";
 
-import hackonnect from "../../assets/hackonnect.jpg";
-import rs from "../../assets/rs.jpg";
-import gk from "../../assets/gk.jpg";
-import exadel from "../../assets/exadel.jpg";
+import hackonnect from "../../../assets/hackonnect.jpg";
+import rs from "../../../assets/rs.jpg";
+import gk from "../../../assets/gk.jpg";
+import exadel from "../../../assets/exadel.jpg";
 
 interface Experience {
   role: string;
@@ -13,7 +13,7 @@ interface Experience {
   location: string;
   description: string;
   icon: string;
-  alt: string;  
+  alt: string;
 }
 
 const experiences: Experience[] = [
