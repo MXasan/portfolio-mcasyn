@@ -35,7 +35,7 @@ export function RightSideProjects() {
             <CarouselItem key={index}>
               <div className="parent-card">
                 <Card className="flex justify-items-center bg-foreground/80 ">
-                  <a href={item.link} className="cursor-Up">
+                  <a href={item.link} data-cursor="up">
                     <CardContent className="card-content">
                       <img src={item.image} alt={item.title} />
                       <div className="card-text">
