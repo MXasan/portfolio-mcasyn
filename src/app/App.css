@@ -30,7 +30,9 @@
     background-attachment: fixed;
     overflow: hidden;
     position: relative;
-
+}
+.personal-space {
+    position: relative; 
 }
 
 .bg-fixed {

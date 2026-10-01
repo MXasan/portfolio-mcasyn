@@ -1,8 +1,10 @@
-import LeftSide from "./leftSide/leftSide";
-import RightSide from "./rightSide/rightSide";
+import { Routes, Route } from "react-router";
+
+import LeftSide from "./leftSide";
+import RightSide from "./rightSide";
 import Cursor from "../components/cursor";
 import "./App.css";
-
+import PersonalSpace from "./personalSpace";
 function App() {
   return (
     <div className="App">
@@ -12,10 +14,12 @@ function App() {
       </div>
       <div className="right">
         <div className="bg-fixed"></div>
-        <RightSide />
+        <Routes>
+          <Route path="/" element={<RightSide />} />
+          <Route path="/personal-space" element={<PersonalSpace />} />
+        </Routes>
       </div>
     </div>
   );
 }
-
 export default App;
