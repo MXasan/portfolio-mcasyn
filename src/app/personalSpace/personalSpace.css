@@ -1,0 +1,17 @@
+h1 {
+    color: aliceblue;
+}
+
+.gallery-section {
+    display: flex;
+    gap: 16px;
+    padding: 20px 24px;
+    max-width: 620px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    margin-bottom: 12px;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.25s ease;
+    overflow: hidden;
+}
