@@ -21,13 +21,13 @@ export function PhotoSection({
               <div className="parent-photoCard">
                 <Card className="flex justify-items-center">
                   {/* <a href={item.link} data-cursor="up"> */}
-                  {/* <CardContent className="photoCard-content mini-gap"> */}
+                  <CardContent className="photoCard-content mini-gap">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="max-w-xs md:max-w-md"
                   />
-                  {/* </CardContent> */}
+                  </CardContent>
                   {/* </a> */}
                 </Card>
               </div>
