@@ -32,7 +32,7 @@ export function RightSideProjects() {
       <Carousel className="carusel w-full sm:max-w-xs forDesktop">
         <CarouselContent>
           {projects.map((item, index) => (
-            <CarouselItem key={index}>
+            <CarouselItem key={index} className="min-w-[520px]">
               <div className="parent-card">
                 <Card className="flex justify-items-center bg-black/80 ">
                   <a href={item.link} data-cursor="up">

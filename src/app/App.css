@@ -1,5 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    cursor: none;
+}
+
 .App {
     display: flex;
+}
+
+
+
+.mini-titles {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 24px 0 12px;
+    color: #808080;
+    text-transform: uppercase;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.mini-gap {
+    display: flex;
+    ;
+    gap: 8px;
+}
+
+.med-gap {
+    gap: 12px;
+}
+
+.big-gap {
+    gap: 16px;
+}
+
+.mar-top {
+    margin-top: 16px;
+}
+
+.mar-bottom {
+    margin-bottom: 16px;
 }
 
 .left {
@@ -31,8 +79,16 @@
     overflow: hidden;
     position: relative;
 }
+
 .personal-space {
-    position: relative; 
+    background: #898181;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
 }
 
 .bg-fixed {
@@ -87,4 +143,16 @@
     .forDesktop {
         display: none;
     }
+}
+
+.photoCard-content {
+    display: flex;
+    gap: 12px;
+}
+
+.profile-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
 }

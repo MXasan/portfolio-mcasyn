@@ -1,6 +1,6 @@
 const RightSideIntro = () => {
   return (
-    <div className="rightSide-intro right-container">
+    <div className="rightSide-intro right-container text-white">
       <p className="mini-titles box-for-element">Intro</p>
       <p className="box-for-element">
         I'm Xasan Ma'murov, a frontend developer from Tashkent, Uzbekistan. My
